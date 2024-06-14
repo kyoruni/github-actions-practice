@@ -5,7 +5,7 @@ on:
       word:
         type: string
         default: fugafuga
-        required: tru
+        required: true
         description: input me!
 jobs:
   run:

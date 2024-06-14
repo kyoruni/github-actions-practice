@@ -1,0 +1,14 @@
+name: Parameter Test
+on:
+  workflow_dispatch:
+    inputs:
+      word:
+        type: string
+        default: fugafuga
+        required: tru
+        description: input me!
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "入力されたワードは${{ inputs.word }}です"

@@ -1,0 +1,8 @@
+name: Hoge
+on: push
+jobs:
+  hoge:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "hogehoge"
+      - uses: actions/checkout@v4

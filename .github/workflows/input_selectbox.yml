@@ -1,0 +1,16 @@
+name: SelectBox Test
+on:
+  workflow_dispatch:
+    inputs:
+      season:
+        type: choice # 入力値を制限する（セレクトボックス）
+        options:
+          - 春
+          - 夏
+          - 秋
+          - 冬
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "選択された季節は${{ inputs.season }}です"

@@ -1,0 +1,11 @@
+name: コンテキストを表示してみる
+on:
+  workflow_dispatch
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "👺 ワークフロー実行者: ${{ github.actor }}"
+      - run: echo "👺 ワークフローの実行ID: ${{ github.run_id }}"
+      - run: echo "👺 ワーキングディレクトリ: ${{ github.workspace }}"
+      - run: echo "👺 リポジトリ名: ${{ github.repository }}"

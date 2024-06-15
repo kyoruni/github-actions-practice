@@ -1,6 +1,6 @@
 name: コンテキストを表示してみる
 on:
-  workflow_dispatch
+  workflow_dispatch:
 jobs:
   print:
     runs-on: ubuntu-latest

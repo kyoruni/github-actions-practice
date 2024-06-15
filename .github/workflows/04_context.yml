@@ -5,7 +5,8 @@ jobs:
   print:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "👺 ワークフロー実行者: ${{ github.actor }}"
-      - run: echo "👺 ワークフローの実行ID: ${{ github.run_id }}"
-      - run: echo "👺 ワーキングディレクトリ: ${{ github.workspace }}"
-      - run: echo "👺 リポジトリ名: ${{ github.repository }}"
+      run: |
+        echo "👺 ワークフロー実行者: ${{ github.actor }}"
+        echo "👺 ワークフローの実行ID: ${{ github.run_id }}"
+        echo "👺 ワーキングディレクトリ: ${{ github.workspace }}"
+        echo "👺 リポジトリ名: ${{ github.repository }}"

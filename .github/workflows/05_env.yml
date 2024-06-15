@@ -10,4 +10,4 @@ jobs:
       - name: Show env
         run: |
           echo "👺 環境変数HOGE: ${{ env.HOGE }}"
-          echo "👺 デフォルト環境変数GITHUB_ACTIONS: ${{ env.GITHUB_ACTIONS }}"
+          echo "👺 デフォルト環境変数GITHUB_ACTIONS: ${GITHUB_ACTIONS}"

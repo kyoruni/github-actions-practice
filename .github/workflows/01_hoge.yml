@@ -4,6 +4,7 @@ on:
 jobs:
   hoge:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
       - run: echo "hogehoge"
       - uses: actions/checkout@v4

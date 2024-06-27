@@ -4,6 +4,7 @@ on:
 jobs:
   print:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     env:
       ACTOR: ${{ github.actor }}
       RUN_ID: ${{ github.run_id }}

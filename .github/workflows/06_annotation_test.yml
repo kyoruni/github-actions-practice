@@ -4,6 +4,7 @@ on:
 jobs:
   log:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
       - run: echo "::error::エラーだよ！"
       - run: echo "::warning::わーにんぐだよ！！"

@@ -1,5 +1,6 @@
 name: Hoge
-on: push
+on:
+  workflow_dispatch:
 jobs:
   hoge:
     runs-on: ubuntu-latest

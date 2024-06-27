@@ -1,6 +1,9 @@
 name: アノテーションのテスト
 on:
   workflow_dispatch:
+defaults:
+  run:
+    shell: bash
 jobs:
   log:
     runs-on: ubuntu-latest

@@ -1,6 +1,9 @@
 name: 環境変数を表示してみる
 on:
   workflow_dispatch:
+defaults:
+  run:
+    shell: bash
 jobs:
   print:
     runs-on: ubuntu-latest

@@ -9,6 +9,9 @@ on:
           - 夏
           - 秋
           - 冬
+defaults:
+  run:
+    shell: bash
 jobs:
   run:
     runs-on: ubuntu-latest

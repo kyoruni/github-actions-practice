@@ -1,6 +1,9 @@
 name: Hoge
 on:
   workflow_dispatch:
+defaults:
+  run:
+    shell: bash
 jobs:
   hoge:
     runs-on: ubuntu-latest

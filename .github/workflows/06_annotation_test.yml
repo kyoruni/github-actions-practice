@@ -1,0 +1,10 @@
+name: アノテーションのテスト
+on:
+  workflow_dispatch:
+jobs:
+  log:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "::error::エラーだよ！"
+      - run: echo "::warning::わーにんぐだよ！！"
+      - run: echo "::notice::hogehogefugafuga"
